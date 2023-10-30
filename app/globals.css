@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+/* .business__account {
+  background-image: url("../assets/img/diversity-workplace.jpg")
+} */
+.login {
+  background-image: linear-gradient(to right,rgba(4, 0, 47, 0.408),rgba(0, 0, 45, 0.388)),
+    url("/dv.jpg");
+}
+.login_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+  height: 33rem;
+  margin-left: 15rem;
+  background-color: rgba(121, 121, 255, 0.368);
+  box-shadow: 1px 1px 20px rgb(0, 4, 82);
+}
+
+
+/* START: General styles */
+.max-width {
+  @apply max-w-[1440px] mx-auto;
+}
+
+.padding-x {
+  @apply sm:px-16 px-4;
+}
+
+.padding-y {
+  @apply py-4;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.custom-btn {
+  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+}
+
+.scroll__hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll__hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.text__dark{
+  @apply text-cyan-900
+}
+.text__blue{
+  @apply text-blue-600
+}
+
+/* END: General styles */
+
+/* START: Hero styles */
+.hero {
+  @apply flex xl:flex-row flex-col text-center gap-5 relative overflow-hidden z-0 max-w-[1440px] mx-auto h-screen lg:text-left;
+  background-image: linear-gradient(to right,#acf8ff3e,#0048ff2f),
+  url("/m.jpg");
+  background-position:300px;
+  background-size: cover;
+}
+
+.hero__title {
+  @apply 2xl:text-[65px] text-5xl font-extrabold leading-snug;
+}
+
+.hero__subtitle {
+  @apply text-2xl font-light mt-5 leading-snug;
+}
+
+
+
+.hero__image-overlay {
+  @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
+}
+/* END: Hero styles */
+
+/* START: Footer styles */
+.footer {
+  @apply flex flex-col text-black-100  mt-5 border-t border-gray-100;
+}
+
+.footer__links-container {
+  @apply flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10;
+}
+
+.footer__rights {
+  @apply flex flex-col justify-start items-start gap-6;
+}
+
+.footer__links {
+  @apply flex-1 w-full flex md:justify-end flex-wrap max-md:mt-10 gap-20;
+}
+
+.footer__link {
+  @apply flex flex-col gap-6 text-base min-w-[170px];
+}
+
+.footer__copyrights {
+  @apply flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10;
+}
+
+.footer__copyrights-link {
+  @apply flex-1 flex sm:justify-end justify-center max-sm:mt-4 gap-10;
+}
+/* END: Footer styles */

@@ -1,0 +1,1 @@
+export interface CustomButtonProps  { isDisabled?:boolean; btnType?:"button" | "submit" | "reset" | undefined; containerStyles?:string; textStyles?:string; title:string; rightIcon?:string; handleClick?:()=>void}
