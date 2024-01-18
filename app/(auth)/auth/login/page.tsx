@@ -27,7 +27,9 @@ function Login() {
         let res = await response.json();
         if (!res.ok) {
           setErr(res.msg);
-          router.refresh();
+          //router.refresh();
+          //test case
+          router.push("/user/dashboard")
         } else router.push("/user/dashboard");
       } else {
         setErr("input cannot be empty");
